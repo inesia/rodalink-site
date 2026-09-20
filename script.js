@@ -83,127 +83,86 @@ if (toggle && nav) {
   });
 }
 
-// Dana Syariah Calculator Functionality
-const syariahCalc = document.querySelector('#syariah-calculator');
-if (syariahCalc) {
-  const tabMotor = syariahCalc.querySelector('#tab-motor');
-  const tabMobil = syariahCalc.querySelector('#tab-mobil');
-  const rangeInput = syariahCalc.querySelector('#loan-amount-range');
-  const amountDisplay = syariahCalc.querySelector('#loan-amount-display');
-  const tenorButtons = syariahCalc.querySelectorAll('.tenors button');
-  const resultDisplay = syariahCalc.querySelector('#monthly-installment');
-  const resultLoanAmount = syariahCalc.querySelector('#result-loan-amount');
-  const resultTenor = syariahCalc.querySelector('#result-tenor');
-  const resultVehicleType = syariahCalc.querySelector('#result-vehicle-type');
-  const waButton = syariahCalc.querySelector('#apply-syariah-wa');
+// Dana Syariah Lead Generation Form (Forwarded directly to WhatsApp for PIC BAF calculation)
+const syariahForm = document.querySelector('#syariah-lead-form');
+if (syariahForm) {
+  const tabMotor = syariahForm.querySelector('#tab-motor');
+  const tabMobil = syariahForm.querySelector('#tab-mobil');
+  const inputNama = syariahForm.querySelector('#lead-nama');
+  const inputPhone = syariahForm.querySelector('#lead-phone');
+  const inputTipe = syariahForm.querySelector('#lead-tipe');
+  const inputTahun = syariahForm.querySelector('#lead-tahun');
+  const inputDana = syariahForm.querySelector('#lead-dana');
 
-  let currentType = 'motor'; // 'motor' | 'mobil'
-  let currentTenor = 12;
+  let selectedVehicle = 'BPKB Motor';
 
-  const config = {
-    motor: {
-      min: 3000000,
-      max: 35000000,
-      step: 500000,
-      default: 10000000,
-      annualRate: 0.14, // 14% p.a.
-      tenors: [12, 18, 24, 36],
-      typeName: 'BPKB Motor'
-    },
-    mobil: {
-      min: 20000000,
-      max: 300000000,
-      step: 5000000,
-      default: 75000000,
-      annualRate: 0.11, // 11% p.a.
-      tenors: [12, 24, 36, 48],
-      typeName: 'BPKB Mobil'
-    }
-  };
-
-  function formatRupiah(num) {
-    return 'Rp ' + Number(num).toLocaleString('id-ID');
-  }
-
-  function setVehicleType(type) {
-    currentType = type;
-    const cfg = config[type];
-
-    if (type === 'motor') {
+  if (tabMotor && tabMobil) {
+    tabMotor.addEventListener('click', () => {
       tabMotor.classList.add('active');
+      tabMotor.setAttribute('aria-selected', 'true');
       tabMobil.classList.remove('active');
-    } else {
-      tabMobil.classList.add('active');
-      tabMotor.classList.remove('active');
-    }
-
-    rangeInput.min = cfg.min;
-    rangeInput.max = cfg.max;
-    rangeInput.step = cfg.step;
-    rangeInput.value = cfg.default;
-
-    // Set tenor buttons according to vehicle
-    tenorButtons.forEach((btn, idx) => {
-      const t = cfg.tenors[idx];
-      if (t) {
-        btn.textContent = t + ' Bulan';
-        btn.dataset.tenor = t;
-        btn.style.display = 'block';
-      } else {
-        btn.style.display = 'none';
+      tabMobil.setAttribute('aria-selected', 'false');
+      selectedVehicle = 'BPKB Motor';
+      if (inputTipe && (!inputTipe.value || inputTipe.placeholder.includes('Avanza'))) {
+        inputTipe.placeholder = 'Contoh: Honda Beat / NMAX';
       }
     });
 
-    // Reset default active tenor
-    currentTenor = cfg.tenors[0];
-    tenorButtons.forEach((btn, idx) => {
-      btn.classList.toggle('active', idx === 0);
+    tabMobil.addEventListener('click', () => {
+      tabMobil.classList.add('active');
+      tabMobil.setAttribute('aria-selected', 'true');
+      tabMotor.classList.remove('active');
+      tabMotor.setAttribute('aria-selected', 'false');
+      selectedVehicle = 'BPKB Mobil';
+      if (inputTipe && (!inputTipe.value || inputTipe.placeholder.includes('Beat'))) {
+        inputTipe.placeholder = 'Contoh: Toyota Avanza / Honda Brio';
+      }
     });
-
-    calculate();
   }
 
-  function calculate() {
-    const loan = Number(rangeInput.value);
-    const cfg = config[currentType];
-    const years = currentTenor / 12;
-    const totalMargin = loan * (cfg.annualRate * years);
-    const totalPayment = loan + totalMargin;
-    const monthly = Math.round(totalPayment / currentTenor);
+  syariahForm.addEventListener('submit', (e) => {
+    e.preventDefault();
 
-    amountDisplay.textContent = formatRupiah(loan);
-    resultDisplay.textContent = formatRupiah(monthly);
-    if (resultLoanAmount) resultLoanAmount.textContent = formatRupiah(loan);
-    if (resultTenor) resultTenor.textContent = currentTenor + ' Bulan';
-    if (resultVehicleType) resultVehicleType.textContent = cfg.typeName;
+    const nama = inputNama ? inputNama.value.trim() : '';
+    const phone = inputPhone ? inputPhone.value.trim() : '';
+    const tipe = inputTipe ? inputTipe.value.trim() : '';
+    const tahun = inputTahun ? inputTahun.value.trim() : '';
+    const dana = inputDana ? inputDana.value.trim() : '';
 
-    // Update WhatsApp CTA link
-    if (waButton) {
-      const message = `Halo RodaLinks, saya ingin konsultasi BAF Dana Syariah Gadai ${cfg.typeName} di Bogor. Estimasi pinjaman: ${formatRupiah(loan)}, Tenor: ${currentTenor} bulan (Estimasi angsuran: ${formatRupiah(monthly)}/bln). Mohon info kelengkapan syarat dan prosesnya.`;
-      waButton.href = `https://wa.me/6285110539167?text=${encodeURIComponent(message)}`;
+    if (!nama) {
+      alert('Mohon isi nama lengkap Anda.');
+      inputNama?.focus();
+      return;
     }
-  }
+    if (!phone || phone.length < 8) {
+      alert('Mohon isi nomor WhatsApp yang valid.');
+      inputPhone?.focus();
+      return;
+    }
+    if (!tipe) {
+      alert('Mohon isi merk & tipe kendaraan.');
+      inputTipe?.focus();
+      return;
+    }
+    if (!tahun) {
+      alert('Mohon isi tahun kendaraan.');
+      inputTahun?.focus();
+      return;
+    }
 
-  if (tabMotor) {
-    tabMotor.addEventListener('click', () => setVehicleType('motor'));
-  }
-  if (tabMobil) {
-    tabMobil.addEventListener('click', () => setVehicleType('mobil'));
-  }
+    let msg = `Halo RodaLinks, saya ingin mengajukan perhitungan simulasi BAF Dana Syariah (Gadai BPKB):\n\n`;
+    msg += `👤 *Nama Lengkap:* ${nama}\n`;
+    msg += `📱 *No. HP/WA:* ${phone}\n`;
+    msg += `🛵/🚗 *Jenis Jaminan:* ${selectedVehicle} (${tipe})\n`;
+    msg += `📅 *Tahun Kendaraan:* ${tahun}\n`;
+    if (dana) {
+      msg += `💰 *Estimasi Kebutuhan Dana:* ${dana}\n`;
+    }
+    msg += `\nMohon bantu diteruskan ke PIC BAF Syariah Bogor untuk dihitung estimasi nilai pencairan dan simulasi angsurannya. Terima kasih!`;
 
-  rangeInput.addEventListener('input', calculate);
-
-  tenorButtons.forEach((btn) => {
-    btn.addEventListener('click', () => {
-      tenorButtons.forEach((b) => b.classList.remove('active'));
-      btn.classList.add('active');
-      currentTenor = Number(btn.dataset.tenor);
-      calculate();
-    });
+    const waUrl = `https://wa.me/6285110539167?text=${encodeURIComponent(msg)}`;
+    window.open(waUrl, '_blank');
   });
-
-  // Initial calculation
-  setVehicleType('motor');
 }
 
 // WhatsApp Smart Popup Widget Logic (Non-intrusive timing & session handling)

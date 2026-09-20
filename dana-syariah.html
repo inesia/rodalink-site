@@ -113,7 +113,7 @@
         </p>
 
         <div class="hero-actions">
-          <a class="button" href="#simulasi">Hitung Simulasi Cicilan <span aria-hidden="true">↓</span></a>
+          <a class="button" href="#simulasi">Ajukan Simulasi BPKB <span aria-hidden="true">↓</span></a>
           <a class="text-link" href="https://wa.me/6285110539167?text=Halo%20RodaLinks%2C%20saya%20ingin%20konsultasi%20pengajuan%20BAF%20Dana%20Syariah%20Gadai%20BPKB%20di%20Bogor." target="_blank" rel="noopener noreferrer">
             Tanya Langsung via WhatsApp
           </a>
@@ -129,100 +129,97 @@
       </div>
     </section>
 
-    <!-- Interactive Simulation Calculator Section -->
+    <!-- Leads & Simulation Request Section -->
     <section class="sim-section" id="simulasi">
       <div class="container sim-grid" id="syariah-calculator">
         <div>
-          <div class="eyebrow">Simulasi Interaktif</div>
-          <h2 class="section-title">Hitung Estimasi Angsuran Dana Syariah</h2>
+          <div class="eyebrow">Simulasi &amp; Estimasi Plafon BPKB</div>
+          <h2 class="section-title">Ajukan Perhitungan Simulasi Dana Syariah</h2>
           <p class="section-lead">
-            Pilih jenis kendaraan, tentukan jumlah pinjaman yang Anda butuhkan, serta tenor cicilan yang diinginkan. Dapatkan estimasi angsuran bulanan yang transparan sebelum mengajukan.
+            Ingin mengetahui estimasi nilai pencairan dan simulasi angsuran bulanan yang tepat untuk kendaraan Anda? Cukup isi formulir data kendaraan di samping. Data Anda akan langsung diteruskan ke PIC resmi BAF Syariah Bogor untuk dihitungkan secara akurat sesuai kondisi dan tahun kendaraan Anda.
           </p>
 
           <div class="sharia-callout">
-            <h4>Tentang Akad Syariah:</h4>
+            <h4>🌿 Akad Syariah Resmi &amp; Terpercaya:</h4>
             <p>
-              Menggunakan akad <em>Al-Ba'i Wa' Al-Isti'jar</em> (jual beli berlanjut sewa guna usaha dan diakhiri dengan hibah). Transaksi bebas dari ketidakjelasan (gharar) dan bunga berbunga (riba), sehingga memberikan ketenangan serta keberkahan finansial bagi keluarga Anda.
+              Menggunakan akad <em>Al-Ba'i Wa' Al-Isti'jar</em> resmi terdaftar dan diawasi oleh OJK serta Dewan Pengawas Syariah. Transaksi bebas riba, transparan, tanpa potongan tersembunyi, dan <strong>unit kendaraan tetap Anda gunakan</strong> sehari-hari.
             </p>
           </div>
 
           <div class="highlight-box">
-            <strong>Catatan Penting:</strong> Perhitungan di samping adalah estimasi angsuran bulanan. Nilai pencairan final dan persetujuan disesuaikan dengan hasil taksasi fisik kendaraan serta kelengkapan dokumen pemohon.
+            <strong>Alur Mudah Pengajuan Simulasi:</strong>
+            <ol style="margin: 8px 0 0; padding-left: 20px; font-size: 14px; line-height: 1.6;">
+              <li>Pilih jenis jaminan (BPKB Motor / Mobil), isi nama, no. HP/WA, dan tahun kendaraan.</li>
+              <li>Klik tombol kirim data untuk membuka WhatsApp RodaLinks.</li>
+              <li>Tim RodaLinks langsung meneruskan data ke PIC BAF untuk perhitungan taksasi dan tabel angsuran terbaik.</li>
+            </ol>
           </div>
         </div>
 
-        <!-- Calculator Card -->
+        <!-- Leads Form Card -->
         <div class="sim-card">
-          <!-- Vehicle Type Selector Tabs -->
-          <div class="type-tabs" role="tablist">
-            <button type="button" class="type-tab active" id="tab-motor" role="tab" aria-selected="true">
-              🛵 BPKB Motor
-            </button>
-            <button type="button" class="type-tab" id="tab-mobil" role="tab" aria-selected="false">
-              🚗 BPKB Mobil
-            </button>
+          <div style="margin-bottom: 22px;">
+            <span class="sharia-badge">📋 FORMULIR SIMULASI AWAL</span>
+            <h3 style="font: 800 22px Manrope; color: var(--navy); margin: 8px 0 4px;">Data Kendaraan &amp; Kontak</h3>
+            <p style="font-size: 13px; color: var(--muted); margin: 0;">Isi formulir ini, rincian simulasi angsuran akan dihitung dan dikirimkan ke WhatsApp Anda.</p>
           </div>
 
-          <!-- Loan Amount Slider -->
-          <div class="field">
-            <label for="loan-amount-range">Jumlah Pembiayaan:</label>
-            <div class="field-row" style="margin-bottom: 8px;">
-              <span>Nilai Pinjaman</span>
-              <b id="loan-amount-display" style="font-size: 20px; color: var(--navy);">Rp 10.000.000</b>
-            </div>
-            <input type="range" id="loan-amount-range" min="3000000" max="35000000" step="500000" value="10000000" aria-label="Slider jumlah pembiayaan">
-            <div class="field-row" style="font-size: 12px; margin-top: 4px;">
-              <span id="min-range-label">Min. Rp 3 Juta</span>
-              <span id="max-range-label">Maks. Rp 35 Juta</span>
-            </div>
-          </div>
-
-          <!-- Tenor Selector -->
-          <div class="field">
-            <label>Pilihan Tenor (Jangka Waktu):</label>
-            <div class="tenors">
-              <button type="button" class="active" data-tenor="12">12 Bulan</button>
-              <button type="button" data-tenor="18">18 Bulan</button>
-              <button type="button" data-tenor="24">24 Bulan</button>
-              <button type="button" data-tenor="36">36 Bulan</button>
-            </div>
-          </div>
-
-          <!-- Calculation Result Card -->
-          <div class="result">
-            <span>Estimasi Angsuran Bulanan:</span>
-            <strong id="monthly-installment">Rp 1.050.000</strong>
-            
-            <div class="sim-details-list">
-              <div class="sim-details-row">
-                <span>Jaminan:</span>
-                <b id="result-vehicle-type">BPKB Motor</b>
-              </div>
-              <div class="sim-details-row">
-                <span>Plafon Pokok:</span>
-                <b id="result-loan-amount">Rp 10.000.000</b>
-              </div>
-              <div class="sim-details-row">
-                <span>Tenor:</span>
-                <b id="result-tenor">12 Bulan</b>
-              </div>
-              <div class="sim-details-row">
-                <span>Proteksi:</span>
-                <b>Asuransi Jiwa &amp; Unit Terlindungi</b>
+          <form id="syariah-lead-form">
+            <!-- Vehicle Type Selector Tabs -->
+            <div class="field">
+              <label>Pilih Jenis Jaminan BPKB: <span style="color: var(--orange);">*</span></label>
+              <div class="type-tabs" role="tablist">
+                <button type="button" class="type-tab active" id="tab-motor" role="tab" aria-selected="true">
+                  🛵 BPKB Motor
+                </button>
+                <button type="button" class="type-tab" id="tab-mobil" role="tab" aria-selected="false">
+                  🚗 BPKB Mobil
+                </button>
               </div>
             </div>
 
-            <small>Estimasi angsuran sudah termasuk perlindungan asuransi dan margin pembiayaan syariah.</small>
-          </div>
+            <!-- Full Name -->
+            <div class="field">
+              <label for="lead-nama">Nama Lengkap: <span style="color: var(--orange);">*</span></label>
+              <input type="text" id="lead-nama" name="nama" placeholder="Contoh: Budi Santoso" required autocomplete="name">
+            </div>
 
-          <div style="margin-top: 20px;">
-            <a id="apply-syariah-wa" class="button" style="width: 100%; box-sizing: border-box; text-align: center;" href="https://wa.me/6285110539167" target="_blank" rel="noopener noreferrer">
-              Konsultasi Pengajuan Ini via WhatsApp <span aria-hidden="true">↗</span>
-            </a>
-          </div>
-          <p class="disclaimer">
-            *Konsultasi gratis tanpa dipungut biaya. Pengajuan diproses melalui lembaga pembiayaan resmi yang terdaftar dan diawasi oleh Otoritas Jasa Keuangan (OJK).
-          </p>
+            <!-- WhatsApp Number -->
+            <div class="field">
+              <label for="lead-phone">Nomor WhatsApp / HP: <span style="color: var(--orange);">*</span></label>
+              <input type="tel" id="lead-phone" name="phone" placeholder="Contoh: 081234567890" required autocomplete="tel">
+            </div>
+
+            <!-- Vehicle Model / Brand & Year Grid -->
+            <div class="lead-grid-row">
+              <div class="field">
+                <label for="lead-tipe">Merk &amp; Tipe Kendaraan: <span style="color: var(--orange);">*</span></label>
+                <input type="text" id="lead-tipe" name="tipe" placeholder="Contoh: Honda Beat / NMAX" required>
+              </div>
+              <div class="field">
+                <label for="lead-tahun">Tahun Kendaraan: <span style="color: var(--orange);">*</span></label>
+                <input type="number" id="lead-tahun" name="tahun" min="2005" max="2026" placeholder="Contoh: 2021" required>
+              </div>
+            </div>
+
+            <!-- Loan Amount Needed (Optional) -->
+            <div class="field">
+              <label for="lead-dana">Estimasi Kebutuhan Dana (Opsional):</label>
+              <input type="text" id="lead-dana" name="dana" placeholder="Contoh: Rp 15 Juta atau Rp 50 Juta">
+            </div>
+
+            <!-- Submit Button -->
+            <div style="margin-top: 18px;">
+              <button type="submit" id="apply-syariah-wa" class="button" style="width: 100%; box-sizing: border-box; text-align: center; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px; font-size: 15px; padding: 15px 20px;">
+                <span>Kirim Data untuk Dihitungkan via WA</span>
+                <span aria-hidden="true">↗</span>
+              </button>
+            </div>
+
+            <p class="disclaimer" style="margin-top: 14px; font-size: 12px; text-align: center; line-height: 1.5;">
+              🔒 Data Anda aman dan diteruskan ke PIC resmi BAF Syariah Bogor untuk perhitungan estimasi plafon dan angsuran.
+            </p>
+          </form>
         </div>
       </div>
     </section>
