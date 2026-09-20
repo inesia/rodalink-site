@@ -205,3 +205,115 @@ if (syariahCalc) {
   // Initial calculation
   setVehicleType('motor');
 }
+
+// WhatsApp Smart Popup Widget Logic (Non-intrusive timing & session handling)
+(() => {
+  const widget = document.querySelector('#wa-widget');
+  if (!widget) return;
+
+  const launcher = widget.querySelector('#wa-launcher');
+  const badge = widget.querySelector('#wa-badge');
+  const teaser = widget.querySelector('#wa-teaser');
+  const teaserClose = widget.querySelector('#wa-teaser-close');
+  const teaserTrigger = widget.querySelector('#wa-teaser-trigger');
+  const card = widget.querySelector('#wa-card');
+  const cardClose = widget.querySelector('#wa-card-close');
+  const directChat = widget.querySelector('#wa-direct-chat');
+
+  const STORAGE_DISMISSED = 'rodalinks_wa_dismissed';
+  const STORAGE_OPENED = 'rodalinks_wa_opened';
+
+  // Context-aware message prefill if on product detail page
+  const productDetail = document.querySelector('.product-detail');
+  if (productDetail && directChat) {
+    const prodName = productDetail.dataset.productName || 'motor Yamaha';
+    const msg = `Halo RodaLinks, saya sedang melihat Yamaha ${prodName} di website. Ingin konsultasi harga OTR Bogor, promo, dan ketersediaan unitnya.`;
+    directChat.href = `https://wa.me/6285110539167?text=${encodeURIComponent(msg)}`;
+  }
+
+  let isDismissed = sessionStorage.getItem(STORAGE_DISMISSED) === 'true';
+  let isOpened = sessionStorage.getItem(STORAGE_OPENED) === 'true';
+  let teaserTimer = null;
+  let autoHideTeaserTimer = null;
+
+  const showTeaser = () => {
+    if (isDismissed || isOpened) return;
+    if (teaser) {
+      teaser.hidden = false;
+    }
+    if (badge) {
+      badge.hidden = false;
+    }
+    // Auto-minimize teaser to badge only after 18 seconds if user doesn't touch it
+    autoHideTeaserTimer = setTimeout(() => {
+      if (teaser && !card.hidden) return;
+      if (teaser && !teaser.hidden) {
+        teaser.hidden = true;
+      }
+    }, 18000);
+  };
+
+  const openCard = () => {
+    if (teaser) teaser.hidden = true;
+    if (badge) badge.hidden = true;
+    if (card) card.hidden = false;
+    if (launcher) launcher.classList.add('is-active');
+    isOpened = true;
+    sessionStorage.setItem(STORAGE_OPENED, 'true');
+    if (autoHideTeaserTimer) clearTimeout(autoHideTeaserTimer);
+  };
+
+  const closeCard = () => {
+    if (card) card.hidden = true;
+    if (launcher) launcher.classList.remove('is-active');
+    isDismissed = true;
+    sessionStorage.setItem(STORAGE_DISMISSED, 'true');
+  };
+
+  const dismissTeaser = (e) => {
+    if (e) e.stopPropagation();
+    if (teaser) teaser.hidden = true;
+    if (badge) badge.hidden = true;
+    isDismissed = true;
+    sessionStorage.setItem(STORAGE_DISMISSED, 'true');
+    if (autoHideTeaserTimer) clearTimeout(autoHideTeaserTimer);
+  };
+
+  if (launcher) {
+    launcher.addEventListener('click', () => {
+      if (card && !card.hidden) {
+        closeCard();
+      } else {
+        openCard();
+      }
+    });
+  }
+
+  if (teaserTrigger) {
+    teaserTrigger.addEventListener('click', openCard);
+  }
+
+  if (teaserClose) {
+    teaserClose.addEventListener('click', dismissTeaser);
+  }
+
+  if (cardClose) {
+    cardClose.addEventListener('click', closeCard);
+  }
+
+  // Trigger popup teaser after 10 seconds or when user scrolls past 35% of page
+  if (!isDismissed && !isOpened) {
+    teaserTimer = setTimeout(showTeaser, 10000);
+
+    const onScroll = () => {
+      const scrollY = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      if (docHeight > 0 && (scrollY / docHeight) > 0.35) {
+        window.removeEventListener('scroll', onScroll);
+        if (teaserTimer) clearTimeout(teaserTimer);
+        showTeaser();
+      }
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+  }
+})();
