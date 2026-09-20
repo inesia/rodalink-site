@@ -1,0 +1,958 @@
+{
+  "source": "Data_Produk_Yamaha_Indonesia_2026(1).xlsx (unggahan pengguna)",
+  "price_accessed_on": "2026-08-07",
+  "market": "Indonesia (referensi harga OTR Jakarta; model off-road tertentu Off The Road)",
+  "contact_wa": "6285110539167",
+  "site_url": "https://rodalink.netlify.app",
+  "products": [
+    {
+      "slug": "aerox-155",
+      "name": "AEROX 155",
+      "category": "MAXI",
+      "variant_count": 3,
+      "price_min": 29380000,
+      "price_max": 32115000,
+      "price_type": "OTR Jakarta",
+      "source_url": "https://www.yamaha-motor.co.id/product/all-new-aerox155-connected/",
+      "image": "images/produk/aerox-155.webp",
+      "variants": [
+        {
+          "name": "Connected/ABS",
+          "price": 32115000,
+          "price_basis": "Harga Rekomendasi OTR Jakarta",
+          "display_color": "Prestige Silver",
+          "source_url": "https://www.yamaha-motor.co.id/product/all-new-aerox155-connected/",
+          "accessed_on": "2026-08-07",
+          "notes": ""
+        },
+        {
+          "name": "CyberCity",
+          "price": 29580000,
+          "price_basis": "Harga Rekomendasi OTR Jakarta",
+          "display_color": "Prestige Silver",
+          "source_url": "https://www.yamaha-motor.co.id/product/all-new-aerox155-connected/",
+          "accessed_on": "2026-08-07",
+          "notes": ""
+        },
+        {
+          "name": "Standard",
+          "price": 29380000,
+          "price_basis": "Harga Rekomendasi OTR Jakarta",
+          "display_color": "Prestige Silver",
+          "source_url": "https://www.yamaha-motor.co.id/product/all-new-aerox155-connected/",
+          "accessed_on": "2026-08-07",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "slug": "aerox-alpha",
+      "name": "AEROX ALPHA",
+      "category": "MAXI",
+      "variant_count": 6,
+      "price_min": 30700000,
+      "price_max": 42230000,
+      "price_type": "OTR Jakarta",
+      "source_url": "https://www.yamaha-motor.co.id/product/aerox-alpha/",
+      "image": "images/produk/aerox-alpha.webp",
+      "variants": [
+        {
+          "name": "\"TURBO\" 70th Livery",
+          "price": 40450000,
+          "price_basis": "Harga Rekomendasi OTR Jakarta",
+          "display_color": "Elixir Dark Silver",
+          "source_url": "https://www.yamaha-motor.co.id/product/aerox-alpha/",
+          "accessed_on": "2026-08-07",
+          "notes": ""
+        },
+        {
+          "name": "\"TURBO\" Ultimate",
+          "price": 42230000,
+          "price_basis": "Harga Rekomendasi OTR Jakarta",
+          "display_color": "Elixir Dark Silver",
+          "source_url": "https://www.yamaha-motor.co.id/product/aerox-alpha/",
+          "accessed_on": "2026-08-07",
+          "notes": ""
+        },
+        {
+          "name": "\"TURBO\"",
+          "price": 40050000,
+          "price_basis": "Harga Rekomendasi OTR Jakarta",
+          "display_color": "Elixir Dark Silver",
+          "source_url": "https://www.yamaha-motor.co.id/product/aerox-alpha/",
+          "accessed_on": "2026-08-07",
+          "notes": ""
+        },
+        {
+          "name": "CyberCity ABS",
+          "price": 34790000,
+          "price_basis": "Harga Rekomendasi OTR Jakarta",
+          "display_color": "Elixir Dark Silver",
+          "source_url": "https://www.yamaha-motor.co.id/product/aerox-alpha/",
+          "accessed_on": "2026-08-07",
+          "notes": ""
+        },
+        {
+          "name": "Cybercity",
+          "price": 31250000,
+          "price_basis": "Harga Rekomendasi OTR Jakarta",
+          "display_color": "Elixir Dark Silver",
+          "source_url": "https://www.yamaha-motor.co.id/product/aerox-alpha/",
+          "accessed_on": "2026-08-07",
+          "notes": ""
+        },
+        {
+          "name": "Standard",
+          "price": 30700000,
+          "price_basis": "Harga Rekomendasi OTR Jakarta",
+          "display_color": "Elixir Dark Silver",
+          "source_url": "https://www.yamaha-motor.co.id/product/aerox-alpha/",
+          "accessed_on": "2026-08-07",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "slug": "lexi-lx-155",
+      "name": "LEXi LX 155",
+      "category": "MAXI",
+      "variant_count": 3,
+      "price_min": 27850000,
+      "price_max": 32500000,
+      "price_type": "OTR Jakarta",
+      "source_url": "https://www.yamaha-motor.co.id/product/lexi-lx-155/",
+      "image": "images/produk/lexi-lx-155.webp",
+      "variants": [
+        {
+          "name": "Connected/ABS",
+          "price": 32500000,
+          "price_basis": "Harga Rekomendasi OTR Jakarta",
+          "display_color": "Ceramic Grey",
+          "source_url": "https://www.yamaha-motor.co.id/product/lexi-lx-155/",
+          "accessed_on": "2026-08-07",
+          "notes": ""
+        },
+        {
+          "name": "S Version",
+          "price": 29650000,
+          "price_basis": "Harga Rekomendasi OTR Jakarta",
+          "display_color": "Ceramic Grey",
+          "source_url": "https://www.yamaha-motor.co.id/product/lexi-lx-155/",
+          "accessed_on": "2026-08-07",
+          "notes": ""
+        },
+        {
+          "name": "Standard",
+          "price": 27850000,
+          "price_basis": "Harga Rekomendasi OTR Jakarta",
+          "display_color": "Ceramic Grey",
+          "source_url": "https://www.yamaha-motor.co.id/product/lexi-lx-155/",
+          "accessed_on": "2026-08-07",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "slug": "nmax",
+      "name": "NMAX",
+      "category": "MAXI",
+      "variant_count": 8,
+      "price_min": 34565000,
+      "price_max": 46945000,
+      "price_type": "OTR Jakarta",
+      "source_url": "https://www.yamaha-motor.co.id/product/nmax-turbo/",
+      "image": "images/produk/nmax.webp",
+      "variants": [
+        {
+          "name": "\"TURBO\" TECH MAX Ultimate",
+          "price": 46945000,
+          "price_basis": "Harga Rekomendasi OTR Jakarta (termasuk aksesori)",
+          "display_color": "Ceramic Grey",
+          "source_url": "https://www.yamaha-motor.co.id/product/nmax-turbo/",
+          "accessed_on": "2026-08-07",
+          "notes": "Harga resmi mencakup aksesori."
+        },
+        {
+          "name": "\"TURBO\" TECH MAX Special Livery",
+          "price": 45365000,
+          "price_basis": "Harga Rekomendasi OTR Jakarta",
+          "display_color": "Ceramic Grey",
+          "source_url": "https://www.yamaha-motor.co.id/product/nmax-turbo/",
+          "accessed_on": "2026-08-07",
+          "notes": ""
+        },
+        {
+          "name": "\"TURBO\" TECH MAX",
+          "price": 44965000,
+          "price_basis": "Harga Rekomendasi OTR Jakarta (termasuk aksesori)",
+          "display_color": "Ceramic Grey",
+          "source_url": "https://www.yamaha-motor.co.id/product/nmax-turbo/",
+          "accessed_on": "2026-08-07",
+          "notes": "Harga resmi mencakup aksesori."
+        },
+        {
+          "name": "\"TURBO\"",
+          "price": 39465000,
+          "price_basis": "Harga Rekomendasi OTR Jakarta (termasuk aksesori)",
+          "display_color": "Ceramic Grey",
+          "source_url": "https://www.yamaha-motor.co.id/product/nmax-turbo/",
+          "accessed_on": "2026-08-07",
+          "notes": "Harga resmi mencakup aksesori."
+        },
+        {
+          "name": "Neo S MAX Special Livery",
+          "price": 35955000,
+          "price_basis": "Harga Rekomendasi OTR Jakarta",
+          "display_color": "Ceramic Grey",
+          "source_url": "https://www.yamaha-motor.co.id/product/nmax-turbo/",
+          "accessed_on": "2026-08-07",
+          "notes": ""
+        },
+        {
+          "name": "Neo S Version",
+          "price": 35555000,
+          "price_basis": "Harga Rekomendasi OTR Jakarta (termasuk aksesori)",
+          "display_color": "Ceramic Grey",
+          "source_url": "https://www.yamaha-motor.co.id/product/nmax-turbo/",
+          "accessed_on": "2026-08-07",
+          "notes": "Harga resmi mencakup aksesori."
+        },
+        {
+          "name": "Neo MAX Special Livery",
+          "price": 34965000,
+          "price_basis": "Harga Rekomendasi OTR Jakarta",
+          "display_color": "Ceramic Grey",
+          "source_url": "https://www.yamaha-motor.co.id/product/nmax-turbo/",
+          "accessed_on": "2026-08-07",
+          "notes": ""
+        },
+        {
+          "name": "Neo Version",
+          "price": 34565000,
+          "price_basis": "Harga Rekomendasi OTR Jakarta (termasuk aksesori)",
+          "display_color": "Ceramic Grey",
+          "source_url": "https://www.yamaha-motor.co.id/product/nmax-turbo/",
+          "accessed_on": "2026-08-07",
+          "notes": "Harga resmi mencakup aksesori."
+        }
+      ]
+    },
+    {
+      "slug": "nmax-155",
+      "name": "NMAX 155",
+      "category": "MAXI",
+      "variant_count": 3,
+      "price_min": 32175000,
+      "price_max": 36300000,
+      "price_type": "OTR Jakarta",
+      "source_url": "https://www.yamaha-motor.co.id/product/all-new-nmax155-connected/",
+      "image": "images/produk/nmax-155.webp",
+      "variants": [
+        {
+          "name": "Connected/ABS",
+          "price": 36300000,
+          "price_basis": "Harga Rekomendasi OTR Jakarta",
+          "display_color": "Prestige Silver",
+          "source_url": "https://www.yamaha-motor.co.id/product/all-new-nmax155-connected/",
+          "accessed_on": "2026-08-07",
+          "notes": ""
+        },
+        {
+          "name": "S Version",
+          "price": 33175000,
+          "price_basis": "Harga Rekomendasi OTR Jakarta",
+          "display_color": "Prestige Silver",
+          "source_url": "https://www.yamaha-motor.co.id/product/all-new-nmax155-connected/",
+          "accessed_on": "2026-08-07",
+          "notes": ""
+        },
+        {
+          "name": "Standard",
+          "price": 32175000,
+          "price_basis": "Harga Rekomendasi OTR Jakarta",
+          "display_color": "Prestige Silver",
+          "source_url": "https://www.yamaha-motor.co.id/product/all-new-nmax155-connected/",
+          "accessed_on": "2026-08-07",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "slug": "tmax",
+      "name": "TMAX",
+      "category": "MAXI",
+      "variant_count": 2,
+      "price_min": 455000000,
+      "price_max": 475000000,
+      "price_type": "OTR Jakarta",
+      "source_url": "https://www.yamaha-motor.co.id/product/tmax-tech-max/",
+      "image": "images/produk/tmax.webp",
+      "variants": [
+        {
+          "name": "TMAX MAX Special Livery",
+          "price": 475000000,
+          "price_basis": "Harga Rekomendasi OTR Jakarta",
+          "display_color": "Crystal Graphite",
+          "source_url": "https://www.yamaha-motor.co.id/product/tmax-tech-max/",
+          "accessed_on": "2026-08-07",
+          "notes": ""
+        },
+        {
+          "name": "TMAX Tech MAX",
+          "price": 455000000,
+          "price_basis": "Harga Rekomendasi OTR Jakarta",
+          "display_color": "Crystal Graphite",
+          "source_url": "https://www.yamaha-motor.co.id/product/tmax-tech-max/",
+          "accessed_on": "2026-08-07",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "slug": "xmax-250",
+      "name": "XMAX 250",
+      "category": "MAXI",
+      "variant_count": 3,
+      "price_min": 70015000,
+      "price_max": 77410000,
+      "price_type": "OTR Jakarta",
+      "source_url": "https://www.yamaha-motor.co.id/product/xmax-connected/",
+      "image": "images/produk/xmax-250.webp",
+      "variants": [
+        {
+          "name": "XMAX 250 MAX Special Livery",
+          "price": 70415000,
+          "price_basis": "Harga Rekomendasi OTR Jakarta",
+          "display_color": "Metallic Blue",
+          "source_url": "https://www.yamaha-motor.co.id/product/xmax-connected/",
+          "accessed_on": "2026-08-07",
+          "notes": ""
+        },
+        {
+          "name": "XMAX 250 TECH MAX",
+          "price": 77410000,
+          "price_basis": "Harga Rekomendasi OTR Jakarta",
+          "display_color": "Metallic Blue",
+          "source_url": "https://www.yamaha-motor.co.id/product/xmax-connected/",
+          "accessed_on": "2026-08-07",
+          "notes": ""
+        },
+        {
+          "name": "XMAX 250 Connected",
+          "price": 70015000,
+          "price_basis": "Harga Rekomendasi OTR Jakarta",
+          "display_color": "Metallic Blue",
+          "source_url": "https://www.yamaha-motor.co.id/product/xmax-connected/",
+          "accessed_on": "2026-08-07",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "slug": "fazzio",
+      "name": "Fazzio",
+      "category": "CLASSY",
+      "variant_count": 5,
+      "price_min": 22820000,
+      "price_max": 25250000,
+      "price_type": "OTR Jakarta",
+      "source_url": "https://www.yamaha-motor.co.id/product/fazzio/",
+      "image": "images/produk/fazzio.webp",
+      "variants": [
+        {
+          "name": "Special Edition \"Sunset Blue\"",
+          "price": 23150000,
+          "price_basis": "Harga Rekomendasi OTR Jakarta",
+          "display_color": "Go Purple",
+          "source_url": "https://www.yamaha-motor.co.id/product/fazzio/",
+          "accessed_on": "2026-08-07",
+          "notes": ""
+        },
+        {
+          "name": "Special Edition \"Starry Night\"",
+          "price": 25250000,
+          "price_basis": "Harga Rekomendasi OTR Jakarta",
+          "display_color": "Go Purple",
+          "source_url": "https://www.yamaha-motor.co.id/product/fazzio/",
+          "accessed_on": "2026-08-07",
+          "notes": ""
+        },
+        {
+          "name": "Hybrid Lux",
+          "price": 25095000,
+          "price_basis": "Harga Rekomendasi OTR Jakarta",
+          "display_color": "Go Purple",
+          "source_url": "https://www.yamaha-motor.co.id/product/fazzio/",
+          "accessed_on": "2026-08-07",
+          "notes": ""
+        },
+        {
+          "name": "Hybrid Neo",
+          "price": 24405000,
+          "price_basis": "Harga Rekomendasi OTR Jakarta",
+          "display_color": "Go Purple",
+          "source_url": "https://www.yamaha-motor.co.id/product/fazzio/",
+          "accessed_on": "2026-08-07",
+          "notes": ""
+        },
+        {
+          "name": "Hybrid",
+          "price": 22820000,
+          "price_basis": "Harga Rekomendasi OTR Jakarta",
+          "display_color": "Go Purple",
+          "source_url": "https://www.yamaha-motor.co.id/product/fazzio/",
+          "accessed_on": "2026-08-07",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "slug": "grand-filano",
+      "name": "Grand Filano",
+      "category": "CLASSY",
+      "variant_count": 2,
+      "price_min": 28665000,
+      "price_max": 29145000,
+      "price_type": "OTR Jakarta",
+      "source_url": "https://www.yamaha-motor.co.id/product/grand-filano/",
+      "image": "images/produk/grand-filano.webp",
+      "variants": [
+        {
+          "name": "Hybrid Lux",
+          "price": 29145000,
+          "price_basis": "Harga Rekomendasi OTR Jakarta",
+          "display_color": "Royal Iron",
+          "source_url": "https://www.yamaha-motor.co.id/product/grand-filano/",
+          "accessed_on": "2026-08-07",
+          "notes": ""
+        },
+        {
+          "name": "Hybrid Neo",
+          "price": 28665000,
+          "price_basis": "Harga Rekomendasi OTR Jakarta",
+          "display_color": "Royal Iron",
+          "source_url": "https://www.yamaha-motor.co.id/product/grand-filano/",
+          "accessed_on": "2026-08-07",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "slug": "fino-125",
+      "name": "Fino 125",
+      "category": "MATIC",
+      "variant_count": 3,
+      "price_min": 20400000,
+      "price_max": 21610000,
+      "price_type": "OTR Jakarta",
+      "source_url": "https://www.yamaha-motor.co.id/product/fino/",
+      "image": "images/produk/fino-125.webp",
+      "variants": [
+        {
+          "name": "Grande",
+          "price": 21610000,
+          "price_basis": "Harga Rekomendasi OTR Jakarta",
+          "display_color": "Luxury Red",
+          "source_url": "https://www.yamaha-motor.co.id/product/fino/",
+          "accessed_on": "2026-08-07",
+          "notes": ""
+        },
+        {
+          "name": "Premium",
+          "price": 20400000,
+          "price_basis": "Harga Rekomendasi OTR Jakarta",
+          "display_color": "Luxury Red",
+          "source_url": "https://www.yamaha-motor.co.id/product/fino/",
+          "accessed_on": "2026-08-07",
+          "notes": ""
+        },
+        {
+          "name": "Sporty",
+          "price": 20400000,
+          "price_basis": "Harga Rekomendasi OTR Jakarta",
+          "display_color": "Luxury Red",
+          "source_url": "https://www.yamaha-motor.co.id/product/fino/",
+          "accessed_on": "2026-08-07",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "slug": "freego-125",
+      "name": "FreeGo 125",
+      "category": "MATIC",
+      "variant_count": 2,
+      "price_min": 22865000,
+      "price_max": 24650000,
+      "price_type": "OTR Jakarta",
+      "source_url": "https://www.yamaha-motor.co.id/product/freego-125/",
+      "image": "images/produk/freego-125.webp",
+      "variants": [
+        {
+          "name": "Connected",
+          "price": 24650000,
+          "price_basis": "Harga Rekomendasi OTR Jakarta",
+          "display_color": "Magma Black",
+          "source_url": "https://www.yamaha-motor.co.id/product/freego-125/",
+          "accessed_on": "2026-08-07",
+          "notes": ""
+        },
+        {
+          "name": "Standard",
+          "price": 22865000,
+          "price_basis": "Harga Rekomendasi OTR Jakarta",
+          "display_color": "Magma Black",
+          "source_url": "https://www.yamaha-motor.co.id/product/freego-125/",
+          "accessed_on": "2026-08-07",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "slug": "gear-125",
+      "name": "Gear 125",
+      "category": "MATIC",
+      "variant_count": 1,
+      "price_min": 19495000,
+      "price_max": 19495000,
+      "price_type": "OTR Jakarta",
+      "source_url": "https://www.yamaha-motor.co.id/product/gear-125/",
+      "image": "images/produk/gear-125.webp",
+      "variants": [
+        {
+          "name": "Standard",
+          "price": 19495000,
+          "price_basis": "Harga Rekomendasi OTR Jakarta",
+          "display_color": "Dull Blue",
+          "source_url": "https://www.yamaha-motor.co.id/product/gear-125/",
+          "accessed_on": "2026-08-07",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "slug": "gear-ultima",
+      "name": "Gear Ultima",
+      "category": "MATIC",
+      "variant_count": 3,
+      "price_min": 20240000,
+      "price_max": 22785000,
+      "price_type": "OTR Jakarta",
+      "source_url": "https://www.yamaha-motor.co.id/product/gear-ultima/",
+      "image": "images/produk/gear-ultima.webp",
+      "variants": [
+        {
+          "name": "Hybrid Smart",
+          "price": 22785000,
+          "price_basis": "Harga Rekomendasi OTR Jakarta",
+          "display_color": "Magma Black",
+          "source_url": "https://www.yamaha-motor.co.id/product/gear-ultima/",
+          "accessed_on": "2026-08-07",
+          "notes": ""
+        },
+        {
+          "name": "Hybrid Solid",
+          "price": 20660000,
+          "price_basis": "Harga Rekomendasi OTR Jakarta",
+          "display_color": "Magma Black",
+          "source_url": "https://www.yamaha-motor.co.id/product/gear-ultima/",
+          "accessed_on": "2026-08-07",
+          "notes": ""
+        },
+        {
+          "name": "Hybrid",
+          "price": 20240000,
+          "price_basis": "Harga Rekomendasi OTR Jakarta",
+          "display_color": "Magma Black",
+          "source_url": "https://www.yamaha-motor.co.id/product/gear-ultima/",
+          "accessed_on": "2026-08-07",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "slug": "mio-m3-125",
+      "name": "Mio M3 125",
+      "category": "MATIC",
+      "variant_count": 1,
+      "price_min": 18905000,
+      "price_max": 18905000,
+      "price_type": "OTR Jakarta",
+      "source_url": "https://www.yamaha-motor.co.id/product/mio-m3/",
+      "image": "images/produk/mio-m3-125.webp",
+      "variants": [
+        {
+          "name": "Mio M3 125",
+          "price": 18905000,
+          "price_basis": "Harga Rekomendasi OTR Jakarta",
+          "display_color": "Metallic Cyan",
+          "source_url": "https://www.yamaha-motor.co.id/product/mio-m3/",
+          "accessed_on": "2026-08-07",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "slug": "x-ride-125",
+      "name": "X-Ride 125",
+      "category": "MATIC",
+      "variant_count": 1,
+      "price_min": 21135000,
+      "price_max": 21135000,
+      "price_type": "OTR Jakarta",
+      "source_url": "https://www.yamaha-motor.co.id/product/x-ride/",
+      "image": "images/produk/x-ride-125.webp",
+      "variants": [
+        {
+          "name": "X-Ride 125",
+          "price": 21135000,
+          "price_basis": "Harga Rekomendasi OTR Jakarta",
+          "display_color": "Blue",
+          "source_url": "https://www.yamaha-motor.co.id/product/x-ride/",
+          "accessed_on": "2026-08-07",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "slug": "mt-15",
+      "name": "MT-15",
+      "category": "SPORT",
+      "variant_count": 1,
+      "price_min": 41215000,
+      "price_max": 41215000,
+      "price_type": "OTR Jakarta",
+      "source_url": "https://www.yamaha-motor.co.id/product/mt15/",
+      "image": "images/produk/mt-15.webp",
+      "variants": [
+        {
+          "name": "MT-15",
+          "price": 41215000,
+          "price_basis": "Harga Rekomendasi OTR Jakarta",
+          "display_color": "Metallic Light Grey",
+          "source_url": "https://www.yamaha-motor.co.id/product/mt15/",
+          "accessed_on": "2026-08-07",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "slug": "mt-25",
+      "name": "MT-25",
+      "category": "SPORT",
+      "variant_count": 1,
+      "price_min": 66450000,
+      "price_max": 66450000,
+      "price_type": "OTR Jakarta",
+      "source_url": "https://www.yamaha-motor.co.id/product/mt25/",
+      "image": "images/produk/mt-25.webp",
+      "variants": [
+        {
+          "name": "MT-25",
+          "price": 66450000,
+          "price_basis": "Harga Rekomendasi OTR Jakarta",
+          "display_color": "Metallic Light Grey",
+          "source_url": "https://www.yamaha-motor.co.id/product/mt25/",
+          "accessed_on": "2026-08-07",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "slug": "r15",
+      "name": "R15",
+      "category": "SPORT",
+      "variant_count": 3,
+      "price_min": 42200000,
+      "price_max": 47100000,
+      "price_type": "OTR Jakarta",
+      "source_url": "https://www.yamaha-motor.co.id/product/all-new-R15-connected/",
+      "image": "images/produk/r15.webp",
+      "variants": [
+        {
+          "name": "R15M C \"ABS\" 70th Livery",
+          "price": 47100000,
+          "price_basis": "Harga Rekomendasi OTR Jakarta",
+          "display_color": "Icon Performance",
+          "source_url": "https://www.yamaha-motor.co.id/product/all-new-R15-connected/",
+          "accessed_on": "2026-08-07",
+          "notes": ""
+        },
+        {
+          "name": "R15M Connected/ABS",
+          "price": 46950000,
+          "price_basis": "Harga Rekomendasi OTR Jakarta",
+          "display_color": "Icon Performance",
+          "source_url": "https://www.yamaha-motor.co.id/product/all-new-R15-connected/",
+          "accessed_on": "2026-08-07",
+          "notes": ""
+        },
+        {
+          "name": "R15 Connected",
+          "price": 42200000,
+          "price_basis": "Harga Rekomendasi OTR Jakarta",
+          "display_color": "Icon Performance",
+          "source_url": "https://www.yamaha-motor.co.id/product/all-new-R15-connected/",
+          "accessed_on": "2026-08-07",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "slug": "r25",
+      "name": "R25",
+      "category": "SPORT",
+      "variant_count": 1,
+      "price_min": 76250000,
+      "price_max": 76250000,
+      "price_type": "OTR Jakarta",
+      "source_url": "https://www.yamaha-motor.co.id/product/r25/",
+      "image": "images/produk/r25.webp",
+      "variants": [
+        {
+          "name": "R25",
+          "price": 76250000,
+          "price_basis": "Harga Rekomendasi OTR Jakarta",
+          "display_color": "Racing Blue",
+          "source_url": "https://www.yamaha-motor.co.id/product/r25/",
+          "accessed_on": "2026-08-07",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "slug": "vixion-155",
+      "name": "VIXION 155",
+      "category": "SPORT",
+      "variant_count": 2,
+      "price_min": 31450000,
+      "price_max": 34020000,
+      "price_type": "OTR Jakarta",
+      "source_url": "https://www.yamaha-motor.co.id/product/vixion/",
+      "image": "images/produk/vixion-155.webp",
+      "variants": [
+        {
+          "name": "VIXION R 155",
+          "price": 34020000,
+          "price_basis": "Harga Rekomendasi OTR Jakarta",
+          "display_color": "Matte Black",
+          "source_url": "https://www.yamaha-motor.co.id/product/vixion/",
+          "accessed_on": "2026-08-07",
+          "notes": ""
+        },
+        {
+          "name": "VIXION 150",
+          "price": 31450000,
+          "price_basis": "Harga Rekomendasi OTR Jakarta",
+          "display_color": "Matte Black",
+          "source_url": "https://www.yamaha-motor.co.id/product/vixion/",
+          "accessed_on": "2026-08-07",
+          "notes": "Nama model di halaman kategori: VIXION 155; varian resmi juga memuat VIXION 150."
+        }
+      ]
+    },
+    {
+      "slug": "xsr-155",
+      "name": "XSR 155",
+      "category": "SPORT",
+      "variant_count": 2,
+      "price_min": 40265000,
+      "price_max": 40665000,
+      "price_type": "OTR Jakarta",
+      "source_url": "https://www.yamaha-motor.co.id/product/xsr-155/",
+      "image": "images/produk/xsr-155.webp",
+      "variants": [
+        {
+          "name": "XSR 155 70th Livery",
+          "price": 40665000,
+          "price_basis": "Harga Rekomendasi OTR Jakarta",
+          "display_color": "Metallic Brown Authentic",
+          "source_url": "https://www.yamaha-motor.co.id/product/xsr-155/",
+          "accessed_on": "2026-08-07",
+          "notes": ""
+        },
+        {
+          "name": "XSR 155",
+          "price": 40265000,
+          "price_basis": "Harga Rekomendasi OTR Jakarta",
+          "display_color": "Metallic Brown Authentic",
+          "source_url": "https://www.yamaha-motor.co.id/product/xsr-155/",
+          "accessed_on": "2026-08-07",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "slug": "wr155r",
+      "name": "WR155R",
+      "category": "OFF-ROAD",
+      "variant_count": 1,
+      "price_min": 41275000,
+      "price_max": 41275000,
+      "price_type": "OTR Jakarta",
+      "source_url": "https://www.yamaha-motor.co.id/product/wr155r/",
+      "image": "images/produk/wr155r.webp",
+      "variants": [
+        {
+          "name": "WR155R",
+          "price": 41275000,
+          "price_basis": "Harga Rekomendasi OTR Jakarta",
+          "display_color": "Blue",
+          "source_url": "https://www.yamaha-motor.co.id/product/wr155r/",
+          "accessed_on": "2026-08-07",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "slug": "yz125x",
+      "name": "YZ125X",
+      "category": "OFF-ROAD",
+      "variant_count": 1,
+      "price_min": 99800000,
+      "price_max": 99800000,
+      "price_type": "Off The Road",
+      "source_url": "https://www.yamaha-motor.co.id/product/yz125x/",
+      "image": "images/produk/yz125x.webp",
+      "variants": [
+        {
+          "name": "YZ125X",
+          "price": 99800000,
+          "price_basis": "Harga Rekomendasi Off The Road",
+          "display_color": "Blue",
+          "source_url": "https://www.yamaha-motor.co.id/product/yz125x/",
+          "accessed_on": "2026-08-07",
+          "notes": "Harga belum termasuk pajak/registrasi jalan."
+        }
+      ]
+    },
+    {
+      "slug": "yz250fx",
+      "name": "YZ250FX",
+      "category": "OFF-ROAD",
+      "variant_count": 1,
+      "price_min": 140000000,
+      "price_max": 140000000,
+      "price_type": "Off The Road",
+      "source_url": "https://www.yamaha-motor.co.id/product/yz250fx/",
+      "image": "images/produk/yz250fx.webp",
+      "variants": [
+        {
+          "name": "YZ250FX",
+          "price": 140000000,
+          "price_basis": "Harga Rekomendasi Off The Road",
+          "display_color": "Blue",
+          "source_url": "https://www.yamaha-motor.co.id/product/yz250fx/",
+          "accessed_on": "2026-08-07",
+          "notes": "Harga belum termasuk pajak/registrasi jalan."
+        }
+      ]
+    },
+    {
+      "slug": "yz250x",
+      "name": "YZ250X",
+      "category": "OFF-ROAD",
+      "variant_count": 1,
+      "price_min": 132000000,
+      "price_max": 132000000,
+      "price_type": "Off The Road",
+      "source_url": "https://www.yamaha-motor.co.id/product/yz250x/",
+      "image": "images/produk/yz250x.webp",
+      "variants": [
+        {
+          "name": "YZ250X",
+          "price": 132000000,
+          "price_basis": "Harga Rekomendasi Off The Road",
+          "display_color": "Blue",
+          "source_url": "https://www.yamaha-motor.co.id/product/yz250x/",
+          "accessed_on": "2026-08-07",
+          "notes": "Harga belum termasuk pajak/registrasi jalan."
+        }
+      ]
+    },
+    {
+      "slug": "jupiter-z1",
+      "name": "Jupiter Z1",
+      "category": "MOPED",
+      "variant_count": 1,
+      "price_min": 22580000,
+      "price_max": 22580000,
+      "price_type": "OTR Jakarta",
+      "source_url": "https://www.yamaha-motor.co.id/product/jupiter-z1/",
+      "image": "images/produk/jupiter-z1.webp",
+      "variants": [
+        {
+          "name": "Jupiter Z1",
+          "price": 22580000,
+          "price_basis": "Harga Rekomendasi OTR Jakarta",
+          "display_color": "Metallic Cyan",
+          "source_url": "https://www.yamaha-motor.co.id/product/jupiter-z1/",
+          "accessed_on": "2026-08-07",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "slug": "mx-king-150",
+      "name": "MX King 150",
+      "category": "MOPED",
+      "variant_count": 3,
+      "price_min": 29200000,
+      "price_max": 29900000,
+      "price_type": "OTR Jakarta",
+      "source_url": "https://www.yamaha-motor.co.id/product/mx-king-150/",
+      "image": "images/produk/mx-king-150.webp",
+      "variants": [
+        {
+          "name": "MX King 150 Prima Pramac Livery",
+          "price": 29900000,
+          "price_basis": "Harga Rekomendasi OTR Jakarta",
+          "display_color": "Blue",
+          "source_url": "https://www.yamaha-motor.co.id/product/mx-king-150/",
+          "accessed_on": "2026-08-07",
+          "notes": "Situs menampilkan angka tanpa awalan “Rp”; dinormalisasi sebagai rupiah."
+        },
+        {
+          "name": "MX King 150 70th Livery",
+          "price": 29400000,
+          "price_basis": "Harga Rekomendasi OTR Jakarta",
+          "display_color": "Blue",
+          "source_url": "https://www.yamaha-motor.co.id/product/mx-king-150/",
+          "accessed_on": "2026-08-07",
+          "notes": ""
+        },
+        {
+          "name": "MX King 150",
+          "price": 29200000,
+          "price_basis": "Harga Rekomendasi OTR Jakarta",
+          "display_color": "Blue",
+          "source_url": "https://www.yamaha-motor.co.id/product/mx-king-150/",
+          "accessed_on": "2026-08-07",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "slug": "vega-force",
+      "name": "Vega Force",
+      "category": "MOPED",
+      "variant_count": 1,
+      "price_min": 19900000,
+      "price_max": 19900000,
+      "price_type": "OTR Jakarta",
+      "source_url": "https://www.yamaha-motor.co.id/product/vega-force/",
+      "image": "images/produk/vega-force.webp",
+      "variants": [
+        {
+          "name": "Vega Force",
+          "price": 19900000,
+          "price_basis": "Harga Rekomendasi OTR Jakarta",
+          "display_color": "Black Yellow",
+          "source_url": "https://www.yamaha-motor.co.id/product/vega-force/",
+          "accessed_on": "2026-08-07",
+          "notes": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://rodalinks-bogor.irw-aplika.chatgpt.site/sitemap.xml
+Sitemap: https://rodalink.netlify.app/sitemap.xml

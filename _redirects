@@ -1,0 +1,4 @@
+# Netlify Pretty URLs / Clean URLs Redirects (dinonaktifkan sementara)
+# /index.html            /                  301
+# /dana-syariah.html     /dana-syariah      301
+# /dana-syariah          /dana-syariah.html 200
