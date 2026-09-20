@@ -231,89 +231,159 @@ if (syariahCalc) {
     directChat.href = `https://wa.me/6285110539167?text=${encodeURIComponent(msg)}`;
   }
 
-  let isDismissed = sessionStorage.getItem(STORAGE_DISMISSED) === 'true';
-  let isOpened = sessionStorage.getItem(STORAGE_OPENED) === 'true';
+  let isDismissed = false;
+  let isOpened = false;
+  try {
+    isDismissed = sessionStorage.getItem(STORAGE_DISMISSED) === 'true';
+    isOpened = sessionStorage.getItem(STORAGE_OPENED) === 'true';
+  } catch (err) {
+    isDismissed = false;
+    isOpened = false;
+  }
+
   let teaserTimer = null;
   let autoHideTeaserTimer = null;
+  let scrollListenerAttached = false;
+
+  const onScroll = () => {
+    const scrollY = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    if (docHeight > 0 && (scrollY / docHeight) > 0.35) {
+      if (scrollListenerAttached) {
+        window.removeEventListener('scroll', onScroll);
+        scrollListenerAttached = false;
+      }
+      if (teaserTimer) clearTimeout(teaserTimer);
+      showTeaser();
+    }
+  };
 
   const showTeaser = () => {
     if (isDismissed || isOpened) return;
     if (teaser) {
       teaser.hidden = false;
+      teaser.style.display = 'block';
     }
     if (badge) {
       badge.hidden = false;
+      badge.style.display = 'flex';
     }
     // Auto-minimize teaser to badge only after 18 seconds if user doesn't touch it
+    if (autoHideTeaserTimer) clearTimeout(autoHideTeaserTimer);
     autoHideTeaserTimer = setTimeout(() => {
-      if (teaser && !card.hidden) return;
-      if (teaser && !teaser.hidden) {
+      if (card && !card.hidden && card.style.display !== 'none') return;
+      if (teaser) {
         teaser.hidden = true;
+        teaser.style.display = 'none';
       }
     }, 18000);
   };
 
-  const openCard = () => {
-    if (teaser) teaser.hidden = true;
-    if (badge) badge.hidden = true;
-    if (card) card.hidden = false;
+  const openCard = (e) => {
+    if (e) {
+      e.stopPropagation();
+      if (typeof e.preventDefault === 'function') e.preventDefault();
+    }
+    if (teaser) {
+      teaser.hidden = true;
+      teaser.style.display = 'none';
+    }
+    if (badge) {
+      badge.hidden = true;
+      badge.style.display = 'none';
+    }
+    if (card) {
+      card.hidden = false;
+      card.style.display = 'flex';
+    }
     if (launcher) launcher.classList.add('is-active');
     isOpened = true;
-    sessionStorage.setItem(STORAGE_OPENED, 'true');
+    try {
+      sessionStorage.setItem(STORAGE_OPENED, 'true');
+    } catch (err) {}
+    if (teaserTimer) clearTimeout(teaserTimer);
     if (autoHideTeaserTimer) clearTimeout(autoHideTeaserTimer);
+    if (scrollListenerAttached) {
+      window.removeEventListener('scroll', onScroll);
+      scrollListenerAttached = false;
+    }
   };
 
-  const closeCard = () => {
-    if (card) card.hidden = true;
+  const closeCard = (e) => {
+    if (e) {
+      e.stopPropagation();
+      if (typeof e.preventDefault === 'function') e.preventDefault();
+    }
+    if (card) {
+      card.hidden = true;
+      card.style.display = 'none';
+    }
     if (launcher) launcher.classList.remove('is-active');
     isDismissed = true;
-    sessionStorage.setItem(STORAGE_DISMISSED, 'true');
+    try {
+      sessionStorage.setItem(STORAGE_DISMISSED, 'true');
+    } catch (err) {}
+    if (teaserTimer) clearTimeout(teaserTimer);
+    if (autoHideTeaserTimer) clearTimeout(autoHideTeaserTimer);
   };
 
   const dismissTeaser = (e) => {
-    if (e) e.stopPropagation();
-    if (teaser) teaser.hidden = true;
-    if (badge) badge.hidden = true;
+    if (e) {
+      e.stopPropagation();
+      if (typeof e.preventDefault === 'function') e.preventDefault();
+    }
+    if (teaser) {
+      teaser.hidden = true;
+      teaser.style.display = 'none';
+    }
+    if (badge) {
+      badge.hidden = true;
+      badge.style.display = 'none';
+    }
     isDismissed = true;
-    sessionStorage.setItem(STORAGE_DISMISSED, 'true');
+    try {
+      sessionStorage.setItem(STORAGE_DISMISSED, 'true');
+    } catch (err) {}
+    if (teaserTimer) clearTimeout(teaserTimer);
     if (autoHideTeaserTimer) clearTimeout(autoHideTeaserTimer);
+    if (scrollListenerAttached) {
+      window.removeEventListener('scroll', onScroll);
+      scrollListenerAttached = false;
+    }
   };
 
   if (launcher) {
-    launcher.addEventListener('click', () => {
-      if (card && !card.hidden) {
-        closeCard();
+    launcher.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (card && !card.hidden && card.style.display !== 'none') {
+        closeCard(e);
       } else {
-        openCard();
+        openCard(e);
       }
     });
   }
 
   if (teaserTrigger) {
-    teaserTrigger.addEventListener('click', openCard);
+    teaserTrigger.addEventListener('click', (e) => {
+      if (e.target.closest('#wa-teaser-close')) return;
+      openCard(e);
+    });
   }
 
   if (teaserClose) {
     teaserClose.addEventListener('click', dismissTeaser);
+    teaserClose.addEventListener('touchend', dismissTeaser, { passive: false });
   }
 
   if (cardClose) {
     cardClose.addEventListener('click', closeCard);
+    cardClose.addEventListener('touchend', closeCard, { passive: false });
   }
 
   // Trigger popup teaser after 10 seconds or when user scrolls past 35% of page
   if (!isDismissed && !isOpened) {
     teaserTimer = setTimeout(showTeaser, 10000);
-
-    const onScroll = () => {
-      const scrollY = window.scrollY;
-      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-      if (docHeight > 0 && (scrollY / docHeight) > 0.35) {
-        window.removeEventListener('scroll', onScroll);
-        if (teaserTimer) clearTimeout(teaserTimer);
-        showTeaser();
-      }
-    };
+    scrollListenerAttached = true;
     window.addEventListener('scroll', onScroll, { passive: true });
   }
 })();
