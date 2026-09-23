@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://rodalink.netlify.app/sitemap.xml
+Sitemap: https://roda.asia/sitemap.xml

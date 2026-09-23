@@ -1,4 +1,4 @@
-# Template Landing Page RodaLinks
+# Template Landing Page Roda.asia
 
 Versi terbaru: tiga layanan, CTA WhatsApp +6285110539167, dan optimasi SEO area Kota serta Kabupaten Bogor.
 
@@ -14,7 +14,7 @@ Versi terbaru: tiga layanan, CTA WhatsApp +6285110539167, dan optimasi SEO area 
 - `build_produk.py`: skrip Python generator statis untuk me-regenerasi katalog dari `data/produk.json`.
 - `style.css`: tata letak dan desain visual (CSS terpisah).
 - `script.js`: skrip interaktif (JavaScript terpisah untuk tahun, menu mobile, dan PWA).
-- `images/logo-rodalink.png`: logo resmi RodaLinks.
+- `images/logo-rodalink.png`: logo resmi Roda.asia.
 - `images/favicon/`: paket lengkap favicon multi-resolusi (ico, png, apple-icon).
 - `images/rodalinks-concept.webp`: gambar hero utama yang telah dioptimalkan.
 - `images/produk/`: gambar format WebP untuk seluruh 28 model motor Yamaha.
@@ -39,7 +39,7 @@ Template ini berupa HTML, CSS, dan JavaScript statis. Tidak membutuhkan npm, dat
 ## Memasang pada hosting sendiri
 
 1. Unggah file website ke folder publik hosting, misalnya `public_html`, dengan `index.html` berada di root domain.
-2. Sebelum digunakan dengan domain baru, ganti SEMUA kemunculan `https://rodalink.netlify.app` menjadi domain HTTPS milikmu dalam `index.html`, `sitemap.xml`, dan `robots.txt`. Ini mencakup canonical, Open Graph, serta URL dan ID pada JSON-LD.
+2. Sebelum digunakan dengan domain baru, ganti SEMUA kemunculan `https://roda.asia` menjadi domain HTTPS milikmu dalam `index.html`, `sitemap.xml`, dan `robots.txt`. Ini mencakup canonical, Open Graph, serta URL dan ID pada JSON-LD.
 3. Sesuaikan tanggal `lastmod` di sitemap dengan perubahan konten berikutnya.
 4. Pastikan hosting menampilkan `404.html` dengan status HTTP 404 untuk URL yang tidak ada. Cara pengaturannya mengikuti penyedia hosting.
 5. Pastikan halaman dapat dibuka tanpa login bila ingin diindeks Google. Setelah domain aktif, verifikasi kepemilikan melalui Google Search Console dan kirim sitemap domain tersebut. Paket ini belum berisi token verifikasi Search Console.

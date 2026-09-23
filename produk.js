@@ -1,4 +1,4 @@
-/* RodaLinks catalogue enhancements. Static HTML remains usable without JavaScript. */
+/* Roda.asia catalogue enhancements. Static HTML remains usable without JavaScript. */
 (() => {
   'use strict';
   const search = document.querySelector('#search-motor');
@@ -89,7 +89,7 @@
       note.hidden = !button.dataset.note;
     }
     if (wa) {
-      const message = `Halo RodaLinks, saya ingin tanya harga Yamaha ${detail.dataset.productName} varian ${variant} untuk Bogor. Mohon info harga OTR, DP, cicilan dan ketersediaannya. Referensi dari katalog Yamaha: ${formatPrice(amount)} (${basisLabel}, data ${detail.dataset.date}).`;
+      const message = `Halo Roda.asia, saya ingin tanya harga Yamaha ${detail.dataset.productName} varian ${variant} untuk Bogor. Mohon info harga OTR, DP, cicilan dan ketersediaannya. Referensi dari katalog Yamaha: ${formatPrice(amount)} (${basisLabel}, data ${detail.dataset.date}).`;
       wa.href = `https://wa.me/${detail.dataset.wa}?text=${encodeURIComponent(message)}`;
     }
   };

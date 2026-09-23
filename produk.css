@@ -1,4 +1,4 @@
-/* RodaLinks product pages. Additive stylesheet: original style.css stays untouched. */
+/* Roda.asia product pages. Additive stylesheet: original style.css stays untouched. */
 .catalog-body { background: #fff; }
 .catalog-body .catalog-topbar { position: relative; z-index: 20; }
 .catalog-brand { display: inline-flex; align-items: baseline; flex-shrink: 0; color: var(--navy); font: 800 26px/1 Manrope, sans-serif; letter-spacing: -.065em; }

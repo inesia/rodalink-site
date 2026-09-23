@@ -23,8 +23,8 @@ if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
     const swPath = window.location.pathname.includes('/produk/') ? '../sw.js' : 'sw.js';
     navigator.serviceWorker.register(swPath)
-      .then((reg) => console.log('RodaLinks PWA Service Worker registered:', reg.scope))
-      .catch((err) => console.log('RodaLinks PWA Service Worker registration failed:', err));
+      .then((reg) => console.log('Roda.asia PWA Service Worker registered:', reg.scope))
+      .catch((err) => console.log('Roda.asia PWA Service Worker registration failed:', err));
   });
 }
 
@@ -150,7 +150,7 @@ if (syariahForm) {
       return;
     }
 
-    let msg = `Halo RodaLinks, saya ingin mengajukan perhitungan simulasi BAF Dana Syariah (Gadai BPKB):\n\n`;
+    let msg = `Halo Roda.asia, saya ingin mengajukan perhitungan simulasi BAF Dana Syariah (Gadai BPKB):\n\n`;
     msg += `👤 *Nama Lengkap:* ${nama}\n`;
     msg += `📱 *No. HP/WA:* ${phone}\n`;
     msg += `🛵/🚗 *Jenis Jaminan:* ${selectedVehicle} (${tipe})\n`;
@@ -179,14 +179,14 @@ if (syariahForm) {
   const cardClose = widget.querySelector('#wa-card-close');
   const directChat = widget.querySelector('#wa-direct-chat');
 
-  const STORAGE_DISMISSED = 'rodalinks_wa_dismissed';
-  const STORAGE_OPENED = 'rodalinks_wa_opened';
+  const STORAGE_DISMISSED = 'roda_asia_wa_dismissed';
+  const STORAGE_OPENED = 'roda_asia_wa_opened';
 
   // Context-aware message prefill if on product detail page
   const productDetail = document.querySelector('.product-detail');
   if (productDetail && directChat) {
     const prodName = productDetail.dataset.productName || 'motor Yamaha';
-    const msg = `Halo RodaLinks, saya sedang melihat Yamaha ${prodName} di website. Ingin konsultasi harga OTR Bogor, promo, dan ketersediaan unitnya.`;
+    const msg = `Halo Roda.asia, saya sedang melihat Yamaha ${prodName} di website. Ingin konsultasi harga OTR Bogor, promo, dan ketersediaan unitnya.`;
     directChat.href = `https://wa.me/6285110539167?text=${encodeURIComponent(msg)}`;
   }
 

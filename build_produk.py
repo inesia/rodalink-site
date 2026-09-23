@@ -52,7 +52,7 @@ def base_head(title, description, path, *, depth=0, schema=None):
 <meta name="robots" content="index,follow,max-image-preview:large">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="id_ID">
-<meta property="og:site_name" content="RodaLinks">
+<meta property="og:site_name" content="Roda.asia">
 <meta property="og:title" content="{h(title)}">
 <meta property="og:description" content="{h(description)}">
 <meta property="og:url" content="{h(canonical)}">
@@ -60,7 +60,7 @@ def base_head(title, description, path, *, depth=0, schema=None):
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
-<meta name="apple-mobile-web-app-title" content="RodaLinks">
+<meta name="apple-mobile-web-app-title" content="Roda.asia">
 <link rel="manifest" href="{prefix}manifest.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -73,11 +73,11 @@ def base_head(title, description, path, *, depth=0, schema=None):
 
 def header(depth=0, active='catalog'):
     prefix='../' if depth else ''
-    wa_chat = wa_link('Halo RodaLinks, saya ingin konsultasi layanan RodaLinks.')
+    wa_chat = wa_link('Halo Roda.asia, saya ingin konsultasi layanan Roda.asia.')
     return f'''<header class="site-header">
   <div class="container topbar">
-    <a href="{prefix}index.html" class="logo" aria-label="RodaLinks, kembali ke beranda">
-      <img src="{prefix}images/logo-rodalink.png" alt="RodaLinks" width="136" height="50">
+    <a href="{prefix}index.html" class="logo" aria-label="Roda.asia, kembali ke beranda">
+      <img src="{prefix}images/logo-rodalink.png" alt="Roda.asia" width="136" height="50">
     </a>
     <button class="menu-toggle" aria-label="Buka menu" aria-expanded="false">☰</button>
     <nav class="nav" aria-label="Navigasi utama">
@@ -91,10 +91,10 @@ def header(depth=0, active='catalog'):
   </div>
 </header>
 
-<aside id="pwa-install-banner" class="pwa-install-banner" aria-label="Pasang Aplikasi RodaLinks">
-  <img src="{prefix}images/favicon/icon-192x192.png" alt="RodaLinks App" class="pwa-install-icon">
+<aside id="pwa-install-banner" class="pwa-install-banner" aria-label="Pasang Aplikasi Roda.asia">
+  <img src="{prefix}images/favicon/icon-192x192.png" alt="Roda.asia App" class="pwa-install-icon">
   <div class="pwa-install-info">
-    <div class="pwa-install-title">Pasang RodaLinks App</div>
+    <div class="pwa-install-title">Pasang Roda.asia App</div>
     <div class="pwa-install-desc">Akses cepat beli motor &amp; gadai BPKB Bogor</div>
   </div>
   <button id="pwa-install-btn" class="pwa-install-btn">Install</button>
@@ -104,8 +104,8 @@ def header(depth=0, active='catalog'):
 
 def footer(depth=0):
     prefix='../' if depth else ''
-    wa_general = wa_link('Halo RodaLinks, saya ingin konsultasi layanan RodaLinks.')
-    wa_motor = wa_link('Halo RodaLinks, saya ingin konsultasi pembelian motor Yamaha di Bogor.')
+    wa_general = wa_link('Halo Roda.asia, saya ingin konsultasi layanan Roda.asia.')
+    wa_motor = wa_link('Halo Roda.asia, saya ingin konsultasi pembelian motor Yamaha di Bogor.')
     return f'''<section class="catalog-bottom-cta">
   <div class="container catalog-bottom-inner">
     <div>
@@ -119,11 +119,11 @@ def footer(depth=0):
 
 <footer class="footer">
   <div class="container">
-    <b>RodaLinks · Penjualan Motor Yamaha Bogor</b>
+    <b>Roda.asia · Penjualan Motor Yamaha Bogor</b>
     <span>Kota Bogor &amp; Kabupaten Bogor · <a href="https://wa.me/{WA}" target="_blank" rel="noopener noreferrer">WhatsApp +62 851-1053-9167</a></span>
-    <span>© <span id="year">2026</span> RodaLinks. Seluruh hak cipta dilindungi.</span>
+    <span>© <span id="year">2026</span> Roda.asia. Seluruh hak cipta dilindungi.</span>
   </div>
-  <div class="container catalog-footer-note">RodaLinks merupakan channel penjualan online yang bermitra dengan dealer resmi Yamaha Putera Motor Bubulak Bogor. Halaman ini bukan situs resmi Yamaha Motor Indonesia. Harga referensi diambil dari data Yamaha tertanggal {DATE_LABEL} dan bukan penawaran harga OTR Bogor.</div>
+  <div class="container catalog-footer-note">Roda.asia merupakan channel penjualan online yang bermitra dengan dealer resmi Yamaha Putera Motor Bubulak Bogor. Halaman ini bukan situs resmi Yamaha Motor Indonesia. Harga referensi diambil dari data Yamaha tertanggal {DATE_LABEL} dan bukan penawaran harga OTR Bogor.</div>
 </footer>
 
 <!-- PWA Mobile Bottom Navigation Bar -->
@@ -160,10 +160,10 @@ def footer(depth=0):
     <div class="wa-teaser-body" id="wa-teaser-trigger" role="button" tabindex="0">
       <div class="wa-teaser-head">
         <div class="wa-avatar-mini">
-          <img src="{prefix}images/logo-rodalink.png" alt="RodaLinks">
+          <img src="{prefix}images/logo-rodalink.png" alt="Roda.asia">
         </div>
         <div class="wa-meta">
-          <strong>Tim RodaLinks Bogor</strong>
+          <strong>Tim Roda.asia Bogor</strong>
           <span class="wa-status"><span class="wa-dot"></span> Online</span>
         </div>
       </div>
@@ -173,15 +173,15 @@ def footer(depth=0):
   </div>
 
   <!-- Expanded Chat Card -->
-  <div id="wa-card" class="wa-card" hidden style="display: none;" aria-modal="true" role="dialog" aria-label="WhatsApp Chat RodaLinks">
+  <div id="wa-card" class="wa-card" hidden style="display: none;" aria-modal="true" role="dialog" aria-label="WhatsApp Chat Roda.asia">
     <div class="wa-card-header">
       <div class="wa-header-info">
         <div class="wa-avatar">
-          <img src="{prefix}images/logo-rodalink.png" alt="Admin RodaLinks">
+          <img src="{prefix}images/logo-rodalink.png" alt="Admin Roda.asia">
           <span class="wa-status-badge"></span>
         </div>
         <div>
-          <strong class="wa-card-title">Tim Konsultasi RodaLinks</strong>
+          <strong class="wa-card-title">Tim Konsultasi Roda.asia</strong>
           <span class="wa-card-desc">Layanan Konsultasi Resmi Bogor</span>
         </div>
       </div>
@@ -189,23 +189,23 @@ def footer(depth=0):
     </div>
     <div class="wa-card-body">
       <div class="wa-chat-bubble">
-        <p>Halo! Selamat datang di <strong>Katalog Yamaha RodaLinks Bogor</strong> 🏍️</p>
+        <p>Halo! Selamat datang di <strong>Katalog Yamaha Roda.asia Bogor</strong> 🏍️</p>
         <p>Pilih topik pertanyaan cepat di bawah atau klik tombol chat untuk konsultasi langsung via WhatsApp:</p>
       </div>
       <div class="wa-quick-chips">
-        <a class="wa-chip" href="https://wa.me/6285110539167?text=Halo%20RodaLinks%2C%20saya%20ingin%20tanya%20promo%20dan%20harga%20OTR%20Bogor%20motor%20Yamaha." target="_blank" rel="noopener noreferrer">
+        <a class="wa-chip" href="https://wa.me/6285110539167?text=Halo%20Roda.asia%2C%20saya%20ingin%20tanya%20promo%20dan%20harga%20OTR%20Bogor%20motor%20Yamaha." target="_blank" rel="noopener noreferrer">
           🏍️ Cek Promo &amp; Diskon Motor
         </a>
-        <a class="wa-chip" href="https://wa.me/6285110539167?text=Halo%20RodaLinks%2C%20saya%20ingin%20simulasi%20DP%20dan%20cicilan%20kredit%20motor%20Yamaha%20Bogor." target="_blank" rel="noopener noreferrer">
+        <a class="wa-chip" href="https://wa.me/6285110539167?text=Halo%20Roda.asia%2C%20saya%20ingin%20simulasi%20DP%20dan%20cicilan%20kredit%20motor%20Yamaha%20Bogor." target="_blank" rel="noopener noreferrer">
           💰 Simulasi DP &amp; Cicilan Kredit
         </a>
-        <a class="wa-chip" href="https://wa.me/6285110539167?text=Halo%20RodaLinks%2C%20saya%20ingin%20konsultasi%20Dana%20Syariah%20BPKB." target="_blank" rel="noopener noreferrer">
+        <a class="wa-chip" href="https://wa.me/6285110539167?text=Halo%20Roda.asia%2C%20saya%20ingin%20konsultasi%20Dana%20Syariah%20BPKB." target="_blank" rel="noopener noreferrer">
           🌿 Konsultasi Dana Syariah BPKB
         </a>
       </div>
     </div>
     <div class="wa-card-footer">
-      <a id="wa-direct-chat" class="wa-cta-btn" href="https://wa.me/6285110539167?text=Halo%20RodaLinks%2C%20saya%20ingin%20konsultasi%20pembelian%20motor%20Yamaha%20di%20Bogor." target="_blank" rel="noopener noreferrer">
+      <a id="wa-direct-chat" class="wa-cta-btn" href="https://wa.me/6285110539167?text=Halo%20Roda.asia%2C%20saya%20ingin%20konsultasi%20pembelian%20motor%20Yamaha%20di%20Bogor." target="_blank" rel="noopener noreferrer">
         <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M20.52 3.48A11.85 11.85 0 0 0 12.07 0C5.46 0 .09 5.37.09 11.98c0 2.11.55 4.17 1.6 5.99L0 24l6.2-1.63a11.9 11.9 0 0 0 5.86 1.53h.01c6.61 0 11.98-5.37 11.98-11.98 0-3.2-1.25-6.21-3.53-8.44zm-8.45 18.42h-.01a9.9 9.9 0 0 1-5.04-1.38l-.36-.21-3.75.98 1-3.65-.24-.38a9.92 9.92 0 0 1-1.52-5.28c0-5.48 4.46-9.94 9.94-9.94 2.65 0 5.15 1.03 7.03 2.91 1.88 1.88 2.91 4.38 2.91 7.03 0 5.48-4.46 9.94-9.96 9.94zm5.45-7.44c-.3-.15-1.77-.87-2.04-.97-.28-.1-.48-.15-.68.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.49-.89-.8-1.5-1.78-1.67-2.08-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.53.15-.17.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.68-1.64-.93-2.25-.24-.59-.49-.51-.68-.52h-.58c-.2 0-.53.08-.8.38-.28.3-1.07 1.05-1.07 2.56s1.1 2.97 1.25 3.17c.15.2 2.16 3.3 5.23 4.63.73.32 1.3.51 1.74.65.73.23 1.4.2 1.93.12.59-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35z"/></svg>
         <span>Chat via WhatsApp</span>
       </a>
@@ -213,7 +213,7 @@ def footer(depth=0):
   </div>
 
   <!-- Floating Launcher Button -->
-  <button type="button" id="wa-launcher" class="wa-launcher" aria-label="Buka bantuan WhatsApp RodaLinks">
+  <button type="button" id="wa-launcher" class="wa-launcher" aria-label="Buka bantuan WhatsApp Roda.asia">
     <span class="wa-unread-badge" id="wa-badge" hidden style="display: none;">1</span>
     <svg class="wa-icon-msg" viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
       <path d="M20.52 3.48A11.85 11.85 0 0 0 12.07 0C5.46 0 .09 5.37.09 11.98c0 2.11.55 4.17 1.6 5.99L0 24l6.2-1.63a11.9 11.9 0 0 0 5.86 1.53h.01c6.61 0 11.98-5.37 11.98-11.98 0-3.2-1.25-6.21-3.53-8.44zm-8.45 18.42h-.01a9.9 9.9 0 0 1-5.04-1.38l-.36-.21-3.75.98 1-3.65-.24-.38a9.92 9.92 0 0 1-1.52-5.28c0-5.48 4.46-9.94 9.94-9.94 2.65 0 5.15 1.03 7.03 2.91 1.88 1.88 2.91 4.38 2.91 7.03 0 5.48-4.46 9.94-9.96 9.94zm5.45-7.44c-.3-.15-1.77-.87-2.04-.97-.28-.1-.48-.15-.68.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.49-.89-.8-1.5-1.78-1.67-2.08-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.53.15-.17.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.68-1.64-.93-2.25-.24-.59-.49-.51-.68-.52h-.58c-.2 0-.53.08-.8.38-.28.3-1.07 1.05-1.07 2.56s1.1 2.97 1.25 3.17c.15.2 2.16 3.3 5.23 4.63.73.32 1.3.51 1.74.65.73.23 1.4.2 1.93.12.59-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35z"/>
@@ -232,7 +232,7 @@ def card(p, depth=0, compact=False):
     prefix='../' if depth else ''
     url=f'{prefix}produk/{p["slug"]}.html'
     ref='Off the road' if basis(p)=='Off the road' else 'OTR Jakarta'
-    msg=f'Halo RodaLinks, saya ingin tanya harga Yamaha {p["name"]} untuk Bogor. Mohon info harga OTR, DP dan cicilan yang tersedia.'
+    msg=f'Halo Roda.asia, saya ingin tanya harga Yamaha {p["name"]} untuk Bogor. Mohon info harga OTR, DP dan cicilan yang tersedia.'
     return f'''<article class="motor-card" data-name="{h(p['name'].lower())}" data-keywords="{h(' '.join(v['name'] for v in p['variants']).lower())}" data-category="{h(p['category'])}" data-price="{p['price_min']}" data-variants="{p['variant_count']}">
 <a class="motor-photo" href="{h(url)}" aria-label="Lihat detail Yamaha {h(p['name'])}"><img src="{prefix}{h(p['image'])}" loading="lazy" width="1000" height="760" alt="Gambar produk Yamaha {h(p['name'])}"><span class="motor-photo-arrow" aria-hidden="true">↗</span></a>
 <div class="motor-card-body"><div class="motor-card-top"><span class="catalog-tag">{h(CATEGORY_LABELS.get(p['category'],p['category']))}</span><span class="motor-variant-count">{p['variant_count']} varian</span></div>
@@ -252,8 +252,8 @@ def breadcrumb(items):
 
 
 def listing_page():
-    title='Katalog Motor Yamaha Bogor | Harga Referensi & Varian - RodaLinks'
-    desc='Jelajahi 28 model dan 65 varian motor Yamaha di RodaLinks Bogor. Cek harga referensi Jakarta per 7 Agustus 2026, lalu konsultasikan harga OTR Bogor lewat WhatsApp.'
+    title='Katalog Motor Yamaha Bogor | Harga Referensi & Varian - Roda.asia'
+    desc='Jelajahi 28 model dan 65 varian motor Yamaha di Roda.asia Bogor. Cek harga referensi Jakarta per 7 Agustus 2026, lalu konsultasikan harga OTR Bogor lewat WhatsApp.'
     schema={'@context':'https://schema.org','@graph':[{'@type':'CollectionPage','name':'Katalog Motor Yamaha Bogor','url':SITE+'/produk.html','description':desc,'inLanguage':'id-ID'},{'@type':'ItemList','numberOfItems':len(PRODUCTS),'itemListElement':[{'@type':'ListItem','position':i+1,'name':'Yamaha '+p['name'],'url':SITE+'/produk/'+p['slug']+'.html'} for i,p in enumerate(PRODUCTS)]}]}
     counts=Counter(p['category'] for p in PRODUCTS)
     chips='<button class="catalog-filter active" data-category="ALL" aria-pressed="true" type="button">Semua <span>'+str(len(PRODUCTS))+'</span></button>'+''.join(f'<button class="catalog-filter" data-category="{c}" aria-pressed="false" type="button">{h(CATEGORY_LABELS[c])} <span>{counts[c]}</span></button>' for c in CATEGORIES)
@@ -264,7 +264,7 @@ def listing_page():
 <span class="catalog-kicker">PILIH MOTOR · KOTA &amp; KABUPATEN BOGOR</span><h1>Temukan motor Yamaha <em>yang cocok buatmu.</em></h1>
 <p>Jelajahi model dan varian Yamaha, bandingkan harga referensi, lalu konsultasikan harga OTR serta pilihan pembiayaan untuk wilayah Bogor.</p>
 <a class="button catalog-hero-button" href="#daftar-motor">Jelajahi katalog <span aria-hidden="true">↓</span></a></div>
-<div class="catalog-hero-panel" aria-label="Ringkasan katalog"><span class="hero-panel-eyebrow">KATALOG RODALINKS</span><div class="hero-panel-metric"><strong>{len(PRODUCTS)}</strong><span>model motor Yamaha</span></div><div class="hero-panel-rule"></div><div class="hero-panel-metric"><strong>{sum(len(p['variants']) for p in PRODUCTS)}</strong><span>pilihan varian</span></div><div class="hero-panel-categories">MAXi <span>·</span> Classy <span>·</span> Matic <span>·</span> Sport <span>·</span> Off-Road <span>·</span> Moped</div></div>
+<div class="catalog-hero-panel" aria-label="Ringkasan katalog"><span class="hero-panel-eyebrow">KATALOG RODA.ASIA</span><div class="hero-panel-metric"><strong>{len(PRODUCTS)}</strong><span>model motor Yamaha</span></div><div class="hero-panel-rule"></div><div class="hero-panel-metric"><strong>{sum(len(p['variants']) for p in PRODUCTS)}</strong><span>pilihan varian</span></div><div class="hero-panel-categories">MAXi <span>·</span> Classy <span>·</span> Matic <span>·</span> Sport <span>·</span> Off-Road <span>·</span> Moped</div></div>
 </div></section>
 <section class="catalog-listing container" id="daftar-motor" aria-labelledby="catalog-heading">
 <div class="catalog-listing-title"><div><span class="catalog-kicker catalog-kicker-dark">JELAJAHI PILIHAN MOTOR</span><h2 id="catalog-heading">Katalog Yamaha</h2><p>Data model, varian, dan harga referensi bersumber dari dokumen Yamaha yang diakses {DATE_LABEL}.</p></div><span class="catalog-data-badge">Harga referensi, bukan OTR Bogor</span></div>
@@ -273,7 +273,7 @@ def listing_page():
 <div class="catalog-results"><p id="catalog-result-count" role="status" aria-live="polite">Menampilkan {len(PRODUCTS)} model</p><p>Harga tiap model merupakan harga awal varian menurut referensi Yamaha.</p></div>
 <div class="motor-grid" id="motor-grid">{''.join(card(p) for p in PRODUCTS)}</div>
 <div class="catalog-empty" id="catalog-empty" hidden><strong>Motor tidak ditemukan.</strong><p>Coba kata kunci lain atau pilih kategori Semua.</p><button class="catalog-reset" type="button" id="catalog-reset">Reset pencarian</button></div>
-<div class="catalog-disclosure"><strong>Informasi harga</strong><p>Harga yang ditampilkan adalah referensi per {DATE_LABEL} dari dokumen yang kamu berikan. Untuk sebagian model Off-Road, harga bersifat <em>off the road</em>. Harga, promo, ketersediaan, DP, dan cicilan wilayah Kota/Kabupaten Bogor wajib dikonfirmasi melalui RodaLinks. Gambar produk digunakan sebagai ilustrasi; periksa foto dan warna terbaru sebelum membeli.</p></div>
+<div class="catalog-disclosure"><strong>Informasi harga</strong><p>Harga yang ditampilkan adalah referensi per {DATE_LABEL} dari dokumen yang kamu berikan. Untuk sebagian model Off-Road, harga bersifat <em>off the road</em>. Harga, promo, ketersediaan, DP, dan cicilan wilayah Kota/Kabupaten Bogor wajib dikonfirmasi melalui Roda.asia. Gambar produk digunakan sebagai ilustrasi; periksa foto dan warna terbaru sebelum membeli.</p></div>
 </section></main>{footer()}</body></html>'''
 
 
@@ -286,12 +286,12 @@ def variant_row(p,v,index,initial_idx):
 
 def detail_page(p):
     name='Yamaha '+p['name']
-    title=f'{name} – Harga Referensi, {p["variant_count"]} Varian | RodaLinks Bogor'
-    description=f'Lihat {p["variant_count"]} varian {name}, harga referensi mulai {rupiah(p["price_min"])} ({basis(p)}, 7 Agustus 2026). Tanya harga OTR Bogor dan cicilan ke RodaLinks.'
+    title=f'{name} – Harga Referensi, {p["variant_count"]} Varian | Roda.asia Bogor'
+    description=f'Lihat {p["variant_count"]} varian {name}, harga referensi mulai {rupiah(p["price_min"])} ({basis(p)}, 7 Agustus 2026). Tanya harga OTR Bogor dan cicilan ke Roda.asia.'
     url='produk/'+p['slug']+'.html'
     initial_idx=next(i for i,v in enumerate(p['variants']) if v['price']==p['price_min'])
     initial=p['variants'][initial_idx]
-    msg=f'Halo RodaLinks, saya ingin tanya harga Yamaha {p["name"]} varian {initial["name"]} untuk Bogor. Mohon info harga OTR, DP, cicilan dan ketersediaannya. Referensi dari katalog Yamaha: {rupiah(initial["price"])} ({basis(p)}, data {DATE_LABEL}).'
+    msg=f'Halo Roda.asia, saya ingin tanya harga Yamaha {p["name"]} varian {initial["name"]} untuk Bogor. Mohon info harga OTR, DP, cicilan dan ketersediaannya. Referensi dari katalog Yamaha: {rupiah(initial["price"])} ({basis(p)}, data {DATE_LABEL}).'
     schema={'@context':'https://schema.org','@graph':[{'@type':'Product','name':name,'brand':{'@type':'Brand','name':'Yamaha'},'category':p['category'],'url':SITE+'/'+url,'sameAs':p['source_url'],'description':description},{'@type':'BreadcrumbList','itemListElement':[{'@type':'ListItem','position':1,'name':'Beranda','item':SITE+'/'},{'@type':'ListItem','position':2,'name':'Katalog Yamaha','item':SITE+'/produk.html'},{'@type':'ListItem','position':3,'name':name,'item':SITE+'/'+url}]}]}
     related=[other for other in PRODUCTS if other['slug']!=p['slug'] and other['category']==p['category']][:3]
     if len(related)<3:
@@ -303,13 +303,13 @@ def detail_page(p):
 {breadcrumb([('Beranda','../index.html'),('Katalog Yamaha','../produk.html'),(name,'')])}
 <div class="detail-layout"><div class="detail-visual"><div class="detail-photo"><img src="../{h(p['image'])}" width="1000" height="760" alt="Gambar produk {h(name)}"></div><div class="detail-image-note">Foto dan pilihan warna dapat berbeda antarvarian. Konfirmasi tampilan serta ketersediaan unit saat konsultasi.</div></div>
 <div class="detail-summary"><div class="detail-tags"><span class="catalog-tag">{h(CATEGORY_LABELS.get(p['category'],p['category']))}</span><span class="detail-variant-badge">{badge}</span></div>
-<h1>{h(name)}</h1><p class="detail-lead">Lihat pilihan varian dan harga referensinya. Untuk harga pembelian di Bogor, promo, serta simulasi DP dan cicilan, konsultasikan langsung dengan RodaLinks.</p>
+<h1>{h(name)}</h1><p class="detail-lead">Lihat pilihan varian dan harga referensinya. Untuk harga pembelian di Bogor, promo, serta simulasi DP dan cicilan, konsultasikan langsung dengan Roda.asia.</p>
 <div class="detail-price-box"><span id="selected-price-label">Harga referensi · {h(basis(p))}</span><strong id="selected-price">{rupiah(initial['price'])}</strong><small id="selected-price-basis">{h(initial['price_basis'])}</small><p>Data harga per {DATE_LABEL}; bukan harga final atau penawaran OTR Bogor.</p></div>
 <div class="detail-variant-heading"><h2>Pilih varian</h2><span id="selected-variant-count">{badge}</span></div><div class="catalog-variants" id="catalog-variants" role="group" aria-label="Pilihan varian {h(name)}">{''.join(variant_row(p,v,i,initial_idx) for i,v in enumerate(p['variants']))}</div>
 <div class="detail-selected-info"><div><span>Varian dipilih</span><strong id="selected-variant">{h(initial['name'])}</strong></div><div><span>Warna yang tercatat</span><strong id="selected-color">{h(color)}</strong></div></div>
 <p class="detail-variant-note" id="selected-variant-note" {'hidden' if not initial['notes'] else ''}>{h(initial['notes'])}</p>
 <div class="detail-actions"><a class="button" id="detail-wa" href="{h(wa_link(msg))}" target="_blank" rel="noopener noreferrer">Tanya harga Bogor via WhatsApp <span aria-hidden="true">↗</span></a><a class="detail-back" href="../produk.html">← Kembali ke katalog</a></div>
-<p class="detail-trust">RodaLinks membantu menghubungkan konsultasi pembelian motor dengan dealer di area Bogor. Persediaan, harga dan persetujuan pembiayaan mengikuti ketentuan pihak terkait.</p>
+<p class="detail-trust">Roda.asia membantu menghubungkan konsultasi pembelian motor dengan dealer di area Bogor. Persediaan, harga dan persetujuan pembiayaan mengikuti ketentuan pihak terkait.</p>
 </div></div></div></section>
 <section class="detail-information"><div class="container detail-info-grid"><div><span class="catalog-kicker catalog-kicker-dark">INFORMASI PRODUK</span><h2>Informasi {h(name)}</h2><p>Data yang tersedia di dokumen sumber meliputi kategori, nama varian, harga, warna tampilan awal, dan tautan produk. Spesifikasi mesin, dimensi, fitur, serta pilihan warna lengkap belum tersedia dalam Excel dan tidak ditambahkan secara perkiraan.</p></div><div class="detail-fact-list"><div><span>Merek</span><strong>Yamaha</strong></div><div><span>Kategori</span><strong>{h(CATEGORY_LABELS.get(p['category'],p['category']))}</strong></div><div><span>Jumlah varian</span><strong>{p['variant_count']} varian</strong></div><div><span>Kisaran harga referensi</span><strong>{rupiah(p['price_min'])}{' – '+rupiah(p['price_max']) if p['price_max'] != p['price_min'] else ''}</strong></div><div><span>Jenis harga</span><strong>{h(basis(p))}</strong></div><div><span>Tanggal akses data</span><strong>{DATE_LABEL}</strong></div></div></div>
 <div class="container detail-source"><div><strong>Butuh spesifikasi lengkap atau foto resmi?</strong><p>Lihat halaman model di Yamaha Indonesia untuk informasi teknis dan foto terbaru.</p></div><a href="{h(p['source_url'])}" target="_blank" rel="noopener noreferrer">Lihat produk di Yamaha Indonesia ↗</a></div></section>
