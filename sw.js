@@ -13,7 +13,7 @@ const ASSETS_TO_CACHE = [
   'images/favicon/favicon.ico',
   'images/favicon/icon-192x192.png',
   'images/favicon/icon-512x512.png',
-  'images/rodalinks-concept.webp',
+  'images/rodaasia-banner.jpg',
   'manifest.webmanifest'
 ];
 

@@ -150,7 +150,7 @@ input:focus-visible {
   content: "";
   position: absolute;
   inset: 0;
-  background: url('images/rodalinks-concept.webp') center right/cover no-repeat;
+  background: url('images/rodaasia-banner.jpg') center right/cover no-repeat;
 }
 
 .hero::after {
