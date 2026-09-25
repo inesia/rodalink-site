@@ -16,14 +16,30 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Verify Cloudflare secrets
+      - name: Prepare Cloudflare credentials
         run: |
-          if [ -z "$CLOUDFLARE_API_TOKEN" ]; then
-            echo "::error::Secret CLOUDFLARE_API_TOKEN belum di-set (Settings → Secrets and variables → Actions)."
+          if [ -z "$CLOUDFLARE_API_TOKEN" ] || [ -z "$CLOUDFLARE_ACCOUNT_ID" ]; then
+            echo "::error::Pastikan secrets CLOUDFLARE_API_TOKEN dan CLOUDFLARE_ACCOUNT_ID sudah di-set di repo."
             exit 1
           fi
-          if [ -z "$CLOUDFLARE_ACCOUNT_ID" ]; then
-            echo "::error::Secret CLOUDFLARE_ACCOUNT_ID belum di-set (Settings → Secrets and variables → Actions)."
+          token="$(printf '%s' "$CLOUDFLARE_API_TOKEN" | tr -d '\r\n\t ')"
+          account="$(printf '%s' "$CLOUDFLARE_ACCOUNT_ID" | tr -d '\r\n\t ' | tr '[:upper:]' '[:lower:]')"
+          if ! printf '%s' "$account" | grep -Eq '^[a-f0-9]{32}$'; then
+            echo "::error::CLOUDFLARE_ACCOUNT_ID harus 32 karakter hex (Account ID), bukan Zone ID domain."
+            echo "Ambil dari sidebar Workers & Pages atau URL: https://dash.cloudflare.com/<ACCOUNT_ID>/workers"
+            exit 1
+          fi
+          echo "CLOUDFLARE_API_TOKEN=$token" >> "$GITHUB_ENV"
+          echo "CLOUDFLARE_ACCOUNT_ID=$account" >> "$GITHUB_ENV"
+          echo "Token length: ${#token}, Account ID: $account"
+
+      - name: Verify token with Cloudflare API
+        run: |
+          response=$(curl -sS "https://api.cloudflare.com/client/v4/user/tokens/verify" \
+            -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN")
+          echo "$response"
+          if ! echo "$response" | grep -q '"status":"success"'; then
+            echo "::error::API Token ditolak Cloudflare. Buat API Token baru (Profile → API Tokens → Edit Cloudflare Workers), bukan Global API Key."
             exit 1
           fi
 
