@@ -1,0 +1,12 @@
+# Dev / repo (do not publish as static files)
+.github/
+.git/
+.agents/
+.gitignore
+*.md
+doc/
+data/
+build_produk.py
+wrangler.jsonc
+.assetsignore
+.htaccess
